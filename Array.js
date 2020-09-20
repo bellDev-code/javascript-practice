@@ -16,7 +16,7 @@ const filtered = filterArray.filter((element, index) => {
   }
 });
 
-// console.log(filtered);
+console.log(filtered);
 
 // arrow 함수는 scope를 안열면 바로 반환하는 말.
 // arrow 함수 써서 바로 반환하는 방법
