@@ -4,8 +4,9 @@
 const array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const mapTest = array.map((element, index) => {
-  //   console.log(element, index);
+  return element * 2;
 });
+// console.log(mapTest);
 
 const filterArray = [5, 3, 8, 9, 2, 1, 4, 6, 7, 10];
 
@@ -16,7 +17,7 @@ const filtered = filterArray.filter((element, index) => {
   }
 });
 
-console.log(filtered);
+// console.log(filtered);
 
 // arrow 함수는 scope를 안열면 바로 반환하는 말.
 // arrow 함수 써서 바로 반환하는 방법
@@ -46,7 +47,7 @@ const sortedArray = sortArray.sort((a, b) => {
     return 0;
   }
 });
-// console.log(sortedArray);
+console.log(sortedArray);
 
 // 오름차순 정리
 const ascSortedArray = sortArray.sort();
@@ -103,4 +104,4 @@ sliceArray.forEach((e, i) => {
 
 const fillArray = [1, 2, 3, 4].fill(3, 0, 10);
 
-console.log(fillArray);
+// console.log(fillArray);
