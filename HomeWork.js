@@ -3,17 +3,20 @@ const Pizza = ["domino", "mr", "pizzahot", "hot", "bene"];
 // 1. map으로 h로 시작하는 원소만 console.log 찍기
 const pizzaMap = Pizza.map((element, index) => {
   if (element.startsWith("h")) {
-    return true;
+    console.log(element);
   }
 });
-// console.log(pizzaMap);
+
+for (const pizzaMap of Pizza) {
+  if (pizzaMap.startsWith("h")) console.log(pizzaMap);
+}
 
 // 2. filter로 domino 만 남긴 배열 만들기
-const pizzaFilter = Pizza.filter((element, index) => {
-  if (element === "domino") {
-    return true;
-  }
-});
+// const pizzaFilter = Pizza.filter((element, index) => {
+//   if (element === "domino") {
+//     return true;
+//   }
+// });
 // console.log(pizzaFilter);
 
 // 3. 오름차순, 내림차순 정렬 하기
@@ -45,13 +48,8 @@ const pizzaFilter = Pizza.filter((element, index) => {
 
 // 5. 배열 0~2 까지랑 3~4 까지 배열 만들기
 
-// 배열 0~2까지
-// const popedValue = Pizza.pop();
-// const popedValue2 = Pizza.pop();
-// console.log(Pizza, popedValue, popedValue2);
+// const sliceValue = Pizza.slice(0, 3);
+// console.log(sliceValue);
 
-// 배열 3~4까지 배열
-// const queueArray = Pizza.shift();
-// const queueArray2 = Pizza.shift();
-// const queueArray3 = Pizza.shift();
-// console.log(Pizza, queueArray, queueArray2, queueArray3);
+// const slicevalue2 = Pizza.slice(3, 5);
+// console.log(slicevalue2);

@@ -47,7 +47,7 @@ const sortedArray = sortArray.sort((a, b) => {
     return 0;
   }
 });
-console.log(sortedArray);
+// console.log(sortedArray);
 
 // 오름차순 정리
 const ascSortedArray = sortArray.sort();
@@ -79,9 +79,9 @@ const stackArray = [0, 10, 20];
 
 // 배열의 마지막을 제거하는 pop
 const popedValue = stackArray.pop();
-const poppedValue2 = stackArray.pop();
+// const poppedValue2 = stackArray.pop();
 
-// console.log(stackArray, popedValue, poppedValue2);
+// console.log(stackArray, popedValue);
 
 const includesArray = [0, 10, 20];
 
@@ -91,7 +91,8 @@ const isIn10 = includesArray.includes(20);
 // queue
 // shift 앞에 있는 아이템을 삭제한다.
 const queueArray = [0, 10, 20];
-// console.log(queueArray.shift());
+const shiftArray = queueArray.shift();
+console.log(queueArray, shiftArray);
 
 // slice (start, end -1)
 const sliceArray = [0, 10, 20];
